@@ -5,7 +5,7 @@ readme contains the instructions.  If there are bugs or comments feel free to
 leave an issue on this repo or ask on Piazza.
 
 This lab is to get you started in learning Static Pages.  Between each change you should refresh your browser to observe changes.  If that doesn't work try restarting the server.
-Google is also your best friend.
+Google is also your best friend.  Also there is a few questions on the form to answer.  This is due at the beginning of the next class.
 
 ## Starting with Routing:
   When you first run the rails server command we get the general rails page.  However if we look
