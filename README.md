@@ -47,29 +47,18 @@ Google is also your best friend.
   worked.
 
 ## Your About page:
-  Currently if you click on the About tab in your nav bar you can't find the page.  This is because it is
-  not in our routes file.  Add a route (using either get or match) to the about page.  Remember the format
-  is:
-  ```
-    get '/about', to: '{controller}#{function}'
-  ```
-  where we replace the curly brackets and everything between them with the proper names.  To figure out
-  what to put in there look in the app/controllers folder and look at the static_pages_controller.rb.  After
-  you route the GET request for '/about' to the proper controller function, restart the server and test if you
-  can reach the About page through the About tab.
+  Currently if you click on the About tab in your nav bar you can't find the page.  Why does that happen when we do    have an in our app/views/pages/about.html.erb?  How can we make it work?
 
-  This about page contains alot less styling and is super basic.  Find the about page in your view folder
-  (app/views/static_pages) and simply change your name.
+  This about page has no styling.  Change your name on the page!
 
 ## Doing some ERB:
   Now we want to fill in our Major and Age (which is blank and 7 respectively).  Let's try and do this
-  without changing the HTML and just using our controller.  If we open app/views/static_pages/about.html.erb
-  we see there our two place holders in the embedded ruby.  Notice the @ at the beginning of these variables.
-  These signifies we defined these in our controller.  Edit the controller and update/create the @variables
-  so that the About page contains the correct information.
+  without changing the HTML and just using our controller WITHOUT editing the html.erb.
+  
+  Next let's add one more piece of information, your favorite song.  Let's do it using an instance variable in embedded ruby rather than hardcoding into the html.
 
 ## Adding CSS classes:
-  If you look at the app/views/static_pages/about.html.erb there is an empty image tag at the bottom.
+  If you look at the app/views/pages/about.html.erb there is an empty image tag at the bottom.
   Add the css class "circular" to it.  What happens?  Can we change this image to another one?  Look at
   app/assets/stylesheets/landing.css.  Scroll to the bottom of the file and see what you find.  Try to
   change this image to an image of yourself?
@@ -77,3 +66,11 @@ Google is also your best friend.
 ## Extra (Do this is was way too easy for you):
   Try to refractor the code so that we don't have to repeat the navbar in both the about and the home page.
   Take a look at the layouts folder under views to get a clue on how to do this.
+
+## How to submit
+  Run these commands
+  ```
+  git add .
+  git commit -am "Routing"
+  ```
+  Create a new repository in your Github account called hw1-sp15.  Follow the instructions on how to push up an existing repository then fill out this google doc https://docs.google.com/forms/d/1LWMH3GMYa7ZI4O8_U83pxzLO769TcSCZYrFw7JCSAdY/viewform?usp=send_form
