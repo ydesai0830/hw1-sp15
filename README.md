@@ -63,7 +63,7 @@ Google is also your best friend.  Also there is a few questions on the form to a
   app/assets/stylesheets/landing.css.  Scroll to the bottom of the file and see what you find.  Try to
   change this image to an image of yourself?
 
-## Extra (Do this is was way too easy for you):
+## Extra (Do this if the homework was way too easy for you):
   Try to refractor the code so that we don't have to repeat the navbar in both the about and the home page.
   Take a look at the layouts folder under views to get a clue on how to do this.
 
